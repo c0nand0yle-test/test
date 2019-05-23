@@ -186,9 +186,6 @@ select * from uninew.tservice where dfservice = '199500000002456'
 select dfservice, dfnamerep, dfservice||' -----> '||dfnamerep as POLE from uninew.tservice
 where dfservice like '%186500000001036%'
 
-
-
-
 ---Проверить
 select n.dfdogovor, u.dfnamerep, n.dfsumma
 from uninew.tservnach n,
