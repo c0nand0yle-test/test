@@ -27,15 +27,15 @@ where dfservice=186700000006132
 ^^^^^^^^^^^
 ************
 select
-'222' "Ú‡·ÎËˆ‡",
-replace(a.dfnamerep,Chr( 13 ) || Chr( 10 ),'') " ‡ÚÍÓÂ Ì‡Á‚‡ÌËÂ", --Û‰‡ÎÂÌËÂ Enter
---replace(a.dfnamerep,Chr( 32 ),'') " ‡ÚÍÓÂ Ì‡Á‚‡ÌËÂ", --Û‰‡ÎÂÌËÂ ÔÓ·ÂÎÓ‚
+'222' "—Ç–∞–±–ª–∏—Ü–∞",
+replace(a.dfnamerep,Chr( 13 ) || Chr( 10 ),'') "–ö—Ä–∞—Ç–∫–æ–µ –Ω–∞–∑–≤–∞–Ω–∏–µ", --—É–¥–∞–ª–µ–Ω–∏–µ Enter
+--replace(a.dfnamerep,Chr( 32 ),'') "–ö—Ä–∞—Ç–∫–æ–µ –Ω–∞–∑–≤–∞–Ω–∏–µ", --—É–¥–∞–ª–µ–Ω–∏–µ –ø—Ä–æ–±–µ–ª–æ–≤
 --trim(a.dfnamerep),
-a.dfservice "ID ÛÒÎÛ„Ë", 
---a.dfdateinbegin "ƒ‡Ú‡ ÔÓÒÎÂ‰ÌÂ„Ó ËÁÏÂÌÂÌËˇ", 
-a.dfdocbegin "¿ÍÚÛ‡Î¸ÌÓÒÚ¸",
+a.dfservice "ID —É—Å–ª—É–≥–∏", 
+--a.dfdateinbegin "–î–∞—Ç–∞ –ø–æ—Å–ª–µ–¥–Ω–µ–≥–æ –∏–∑–º–µ–Ω–µ–Ω–∏—è", 
+a.dfdocbegin "–ê–∫—Ç—É–∞–ª—å–Ω–æ—Å—Ç—å",
 --a.dfservgroup,
-b.dfname "œ‡ÔÍ‡" 
+b.dfname "–ü–∞–ø–∫–∞" 
 
 from 
 uninew.tservice a,
@@ -46,17 +46,17 @@ and b.dfservgroup=a.dfservgroup
 and a.dfname like '%aspersky%' 
 and a.dfservice=184400000005899
 and a.dfdateinbegin > to_date('01.01.2019','dd.mm.yyyy')
---and a.dfname like '%ƒÎˇ ËÌÚÂÌÂÚ‡%'
-    --or a.dfnamerep like '%œ‡ÍÂÚ ÚÂÎÂÍ‡Ì‡ÎÓ‚ "Viasat œÂÏËÛÏ%'  ---!1435,1691,2226,3997!----(¿—“, Œ—“,  ¡–, ƒ¿√, »Õ√,  Ã, —“¬,  ◊–)
-    --or a.dfnamerep like '%œ‡ÍÂÚ ÚÂÎÂÍ‡Ì‡ÎÓ‚ "Amedia Premium%' ---!1729,2208!----(¿—“, Œ—“,  ¡–, ƒ¿√, »Õ√,  Ã, —“¬
-    --or a.dfnamerep like '%œ‡ÍÂÚ ÚÂÎÂÍ‡Ì‡ÎÓ‚ "Amedia+Viasat Premium%' ---!2131!----(¿—“, Œ—“,  ¡–, ƒ¿√, »Õ√,  Ã, —“¬,  ◊–)
-    --or a.dfnamerep like '%œ‡ÍÂÚ ÚÂÎÂÍ‡Ì‡ÎÓ‚ "ÿ‡ÌÚ œÂÏËÛÏ%'  ---!2979!----
-    --or a.dfnamerep like '%œ‡ÍÂÚ ÚÂÎÂÍ‡Ì‡ÎÓ‚ "¬ÂÒ¸ ‘ÛÚ·ÓÎ%'  ---!3032!----
+--and a.dfname like '%–î–ª—è –∏–Ω—Ç–µ—Ä–Ω–µ—Ç–∞%'
+    --or a.dfnamerep like '%–ü–∞–∫–µ—Ç —Ç–µ–ª–µ–∫–∞–Ω–∞–ª–æ–≤ "Viasat –ü—Ä–µ–º–∏—É–º%'  ---!1435,1691,2226,3997!----(–ê–°–¢, –û–°–¢, –ö–ë–†, –î–ê–ì, –ò–ù–ì, –ö–ú, –°–¢–í, –ö–ß–†)
+    --or a.dfnamerep like '%–ü–∞–∫–µ—Ç —Ç–µ–ª–µ–∫–∞–Ω–∞–ª–æ–≤ "Amedia Premium%' ---!1729,2208!----(–ê–°–¢, –û–°–¢, –ö–ë–†, –î–ê–ì, –ò–ù–ì, –ö–ú, –°–¢–í
+    --or a.dfnamerep like '%–ü–∞–∫–µ—Ç —Ç–µ–ª–µ–∫–∞–Ω–∞–ª–æ–≤ "Amedia+Viasat Premium%' ---!2131!----(–ê–°–¢, –û–°–¢, –ö–ë–†, –î–ê–ì, –ò–ù–ì, –ö–ú, –°–¢–í, –ö–ß–†)
+    --or a.dfnamerep like '%–ü–∞–∫–µ—Ç —Ç–µ–ª–µ–∫–∞–Ω–∞–ª–æ–≤ "–®–∞–Ω—Ç –ü—Ä–µ–º–∏—É–º%'  ---!2979!----
+    --or a.dfnamerep like '%–ü–∞–∫–µ—Ç —Ç–µ–ª–µ–∫–∞–Ω–∞–ª–æ–≤ "–í–µ—Å—å –§—É—Ç–±–æ–ª%'  ---!3032!----
 ************
 
 select * from uninew.tservgroup t
 
---where t.dfservgroup=186501193146512   ----!!!!!!!!!!!! ÔÓËÒÍ ÛÒÎÛ„ ÔÓ ‡Á‰ÂÎ‡Ï
+--where t.dfservgroup=186501193146512   ----!!!!!!!!!!!! –ø–æ–∏—Å–∫ —É—Å–ª—É–≥ –ø–æ —Ä–∞–∑–¥–µ–ª–∞–º
 
               CONNECT BY PRIOR t.DFSERVGROUPMASTEr = t.DFSERVGROUP
 
@@ -67,7 +67,7 @@ select * from uninew.tservgroup t
               
               
 select  dfnamerep, dfname, dfservice, dfdocbegin, 
-(select dfname from uninew.tservgroup where dfservgroup=a.dfservgroup) œ‡ÔÍ‡
+(select dfname from uninew.tservgroup where dfservgroup=a.dfservgroup) –ü–∞–ø–∫–∞
 from uninew.tservice a 
 where dfservice in 
 (187700000003631,
@@ -77,21 +77,21 @@ where dfservice in
 187700000003633)
 ,187700000004957),186700000004630)
 select * from uninew.tservgroup where  dfservgroup='-1'
-uninew.tservice.dfname!='ƒÓÒÚÛÔ Í —œƒ (xPON)'
+uninew.tservice.dfname!='–î–æ—Å—Ç—É–ø –∫ –°–ü–î (xPON)'
 
 
 ---------------------
 select 
-dfnumber ”˜ÂÚÌÓÂ_ËÏˇ,
-dfservconst —Â‚ÍÓÌÒÚ_ ÓÏÏ”ÒÎÛ„Ë, 
-dfdogovor ƒÓ„Ó‚Ó_ Û–—,
+dfnumber –£—á–µ—Ç–Ω–æ–µ_–∏–º—è,
+dfservconst –°–µ—Ä–≤–∫–æ–Ω—Å—Ç_–ö–æ–º–º–£—Å–ª—É–≥–∏, 
+dfdogovor –î–æ–≥–æ–≤–æ—Ä_–ö—É–†–°,
 (select DFCONNECTION_ID from argus_gate.tsc_spd_link where DFSERVCONST_SPD=Z.dfservconstmaster) ID_Onyma,
-dfservconstmaster —Â‚ÍÓÌÒÚ_ÿœƒ,
-(select DFHOUSENUMBER from uninew.torpon_house where DFGLOBALID=Z.DFORPON_HOUSE and dfdate_end is null ) ƒÓÏ_Œ–œŒÕ,
-dfhouse ƒÓÏ_ Û–Ò,
+dfservconstmaster –°–µ—Ä–≤–∫–æ–Ω—Å—Ç_–®–ü–î,
+(select DFHOUSENUMBER from uninew.torpon_house where DFGLOBALID=Z.DFORPON_HOUSE and dfdate_end is null ) –î–æ–º_–û–†–ü–û–ù,
+dfhouse –î–æ–º_–ö—É–†—Å,
 dfdevice, 
-(select dfname from uninew.tdevice where dfdevice=Z.dfdevice) “ËÔ,
-(select dfname from uninew.tservice where dfservice=Z.dfservice and dfname not like '%ƒÓÒÚÛÔ Í —œƒ%' ) ”ÒÎÛ„‡
+(select dfname from uninew.tdevice where dfdevice=Z.dfdevice) –¢–∏–ø,
+(select dfname from uninew.tservice where dfservice=Z.dfservice and dfname not like '%–î–æ—Å—Ç—É–ø –∫ –°–ü–î%' ) –£—Å–ª—É–≥–∞
 from  uninew.tservconst Z
 where 
 dfdevice in (1101) 
@@ -106,7 +106,7 @@ where DFSERVCONST_SPD=844241000780667
 and a.DFSERVCONST_SPD=b.dfservconst 
 
 select DFCONNECTION_ID,DFSC_SPD_DATEEND,DFSERVCONST_SPD,b.dfnumber,DFSERVCONST_OTA,
-(select DFDOGOVOR from uninew.tservconst where a.DFSERVCONST_SPD=dfservconst) ƒÓ„Ó‚Ó_ Û–— 
+(select DFDOGOVOR from uninew.tservconst where a.DFSERVCONST_SPD=dfservconst) –î–æ–≥–æ–≤–æ—Ä_–ö—É–†–° 
 from argus_gate.tsc_spd_link a, uninew.tservconst b
 where DFCONNECTION_ID=51446198	
 and a.DFSERVCONST_SPD=b.dfservconst 
@@ -118,7 +118,7 @@ select * from argus_gate.tsc_spd_link where DFDOGOVOR_ONIMA=1310503296
 ~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~
-select b.SVC_FULLADDR,b.dfservconst,b.dfhouse,b.DFKORPUS, a.DFHOUSENUMBER ƒÓÏ_Œ–œŒÕ,a.DFGLOBALID
+select b.SVC_FULLADDR,b.dfservconst,b.dfhouse,b.DFKORPUS, a.DFHOUSENUMBER –î–æ–º_–û–†–ü–û–ù,a.DFGLOBALID
 from uninew.TORPON_HOUSE_KURS  a, uninew.VSERVCONSTFULL b
 where 1=1
 and a.DFSTREETUNIKEY = b.DFSTREETUNIKEY
@@ -146,11 +146,11 @@ select * from uninew.torpon_house
 select * from uninew.tdevice
 select * from uninew.tservice
 select * from uninew.tservconst WHERE dfcity=98000000084 and DFSERVCONST=862203007238991
-select * from uninew.tcity where dfnameADDR like '%√ŒÀŒ¬»Õ ¿%' 6204354
+select * from uninew.tcity where dfnameADDR like '%–ì–û–õ–û–í–ò–ù–ö–ê%' 6204354
 select * from uninew.tstreet where dfstreet=6204354
 select DFHOUSENUMBER from uninew.torpon_house Y, uninew.tservconst Z where Y.DFGLOBALID=Z.DFORPON_HOUSE and Z.dfservconst=199500000171325 
 
-select a.dfservconst,a.dfhouse ƒÓÏ_ Û–Ò,b.DFHOUSENUMBER ƒÓÏ_Œ–œŒÕ
+select a.dfservconst,a.dfhouse –î–æ–º_–ö—É–†—Å,b.DFHOUSENUMBER –î–æ–º_–û–†–ü–û–ù
 from uninew.tservconst a , uninew.tORPON_HOUSE b
 where dfservconst=199500000171325
 and a.DFORPON_HOUSE=b.DFGLOBALID(+) 
@@ -186,14 +186,16 @@ select * from uninew.tservice where dfservice = '199500000002456'
 select dfservice, dfnamerep, dfservice||' -----> '||dfnamerep as POLE from uninew.tservice
 where dfservice like '%186500000001036%'
 
-select n.dfdogovor, u.dfnamerep, n.dfsumma
 
+
+
+---–ü—Ä–æ–≤–µ—Ä–∏—Ç—å
+select n.dfdogovor, u.dfnamerep, n.dfsumma
 from uninew.tservnach n,
 
-     (select dfservice, dfnamerep from uninew.tservice where upper(dfnamerep) like ('%¿ ÷»ﬂ "√Œƒ  »ÕŒ"%')) u,
+     (select dfservice, dfnamerep from uninew.tservice where upper(dfnamerep) like ('%–ê–ö–¶–ò–Ø "–ì–û–î –ö–ò–ù–û"%')) u,
 
      (select dfperiod from uninew.tperiod where dfnpp='207') p
 where 1=1
 and n.dfperiod=p.dfperiod
-
 and n.dfservice=u.dfservice
